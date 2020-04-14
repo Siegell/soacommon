@@ -1,0 +1,14 @@
+## PostgreSQL
+spring:
+  datasource:
+    url: 'jdbc:postgresql://localhost:5433/soabank'
+    username: 'soabank'
+    password: 'soabank'
+
+  #drop n create table again, good for testing, comment this in production
+  jpa:
+    hibernate:
+      ddl-auto: create
+
+server:
+  port: 8040
